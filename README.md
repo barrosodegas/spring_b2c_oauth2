@@ -55,8 +55,10 @@
 ### Goal
 - Authenticate users and authorize access to sensitive data.
 
+### Keycloak version
+- 22.0.1
+
 ### Run by docker-compose yaml
 - docker-compose -f docker-compose.yaml up -d
 - Default Port: 8080
-- Version 22.0.1
 - Default user and password: admin

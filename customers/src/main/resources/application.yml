@@ -1,13 +1,13 @@
 server:
-  port: ${CUSTOMER_SERVER_PORT}
+  port: ${CUSTOMER_SERVER_PORT:8081}
 
 spring:
   config:
-    import: "optional:configserver:http://${CONFIG_SERVER_USER}:${CONFIG_SERVER_PASSWORD}@${CONFIG_SERVER_HOST}"
+    import: "optional:configserver:http://${CONFIG_SERVER_USER:root}:${CONFIG_SERVER_PASSWORD:s3cr3t}@${CONFIG_SERVER_HOST}"
   cloud:
     config:
       name: ${CONFIG_SERVER_FILE_PROPERTIES_NAME}
-      profile: ${CONFIG_SERVER_PROFILE}
+      profile: ${CONFIG_SERVER_PROFILE:qa}
 
 management:
   endpoints:

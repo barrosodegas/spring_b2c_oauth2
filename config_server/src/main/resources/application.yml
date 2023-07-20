@@ -1,0 +1,20 @@
+server:
+  port: ${CONFIG_SERVER_PORT}
+
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CONFIG_SERVER_REPOSITORY_URI}
+          timeout: 3
+          clone-on-start: true
+          force-pull: true
+          deleteUntrackedBranches: true
+          default-label: ${CONFIG_SERVER_DEFAULT_LABEL}
+  security:
+    user:
+      name: ${CONFIG_SERVER_USER}
+      password: ${CONFIG_SERVER_PASSWORD}

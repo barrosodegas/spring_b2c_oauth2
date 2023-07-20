@@ -6,7 +6,7 @@ spring:
     import: "optional:configserver:http://${CONFIG_SERVER_USER}:${CONFIG_SERVER_PASSWORD}@${CONFIG_SERVER_HOST}"
   cloud:
     config:
-      name: ${CONFIG_SERVER_LABEL}
+      name: ${CONFIG_SERVER_FILE_PROPERTIES_NAME}
       profile: ${CONFIG_SERVER_PROFILE}
 
 management:

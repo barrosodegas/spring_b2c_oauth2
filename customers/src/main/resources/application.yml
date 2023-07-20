@@ -1,0 +1,18 @@
+server:
+  port: ${CUSTOMER_SERVER_PORT}
+
+spring:
+  config:
+    import: "optional:configserver:http://${CONFIG_SERVER_USER}:${CONFIG_SERVER_PASSWORD}@${CONFIG_SERVER_HOST}"
+  cloud:
+    config:
+      name: ${CONFIG_SERVER_LABEL}
+      profile: ${CONFIG_SERVER_PROFILE}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+          - health

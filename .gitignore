@@ -14,3 +14,21 @@ config_server/*.ipr
 config_server/.vscode/
 
 config_server/.mvn/
+
+
+# Customers
+customers/*.class
+
+customers/HELP.md
+customers/target/
+
+### IntelliJ IDEA ###
+customers/.idea
+customers/*.iws
+customers/*.iml
+customers/*.ipr
+
+### VS Code ###
+customers/.vscode/
+
+customers/.mvn/

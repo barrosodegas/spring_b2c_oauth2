@@ -44,7 +44,7 @@
 - spring.security.oauth2.client.registration.keycloak.client-secret: You client secret key
 - spring.security.oauth2.client.registration.keycloak.authorization-grant-type: authorization_code
 - spring.security.oauth2.client.registration.keycloak.scope: openid
-- spring.security.oauth2.client.registration.keycloak.redirect-uri: http://localhost:<XXXX Customer Port>/login/oauth2/code/Your Keycloak client ID
+- spring.security.oauth2.client.registration.keycloak.redirect-uri: http://localhost:XXXX Customer Port/login/oauth2/code/Your Keycloak client ID
 - spring.security.oauth2.client.provider.keycloak.issuer-uri: http://localhost:XXXX Keycloak Port/realms/Your keycloak realm
 - spring.security.oauth2.client.provider.keycloak.user-name-attribute: preferred_username
 - spring.security.oauth2.resourceserver.jwt.issuer-uri: http://localhost:XXXX Keycloak Port/realms/Your keycloak realm

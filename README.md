@@ -64,8 +64,8 @@
 - Default user and password: admin
 
 ### Steps to create secutiry B2C access 
-- Create a realm with default configurations
-- Create a user with default configurations
+- Create a new realm with default configurations
+- Create a new user with default configurations
 - Create a credentials by password to user
-- Create a client with Client Authentication and Authorization
+- Create a new client with Client Authentication and Authorization
 - Create a credentials by client_id and secret

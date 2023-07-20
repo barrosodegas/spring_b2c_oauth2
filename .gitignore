@@ -32,3 +32,6 @@ customers/*.ipr
 customers/.vscode/
 
 customers/.mvn/
+
+# Docker
+.docker/

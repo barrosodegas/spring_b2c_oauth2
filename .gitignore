@@ -1,3 +1,5 @@
+.idea/
+
 # Config server
 config_server/*.class
 

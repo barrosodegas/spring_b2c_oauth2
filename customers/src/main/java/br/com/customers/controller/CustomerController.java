@@ -17,8 +17,11 @@ public class CustomerController {
 
     @GetMapping(path = "/customers")
     public String customers(Principal principal, Model model) {
-        addCustomers();
         Iterable<Customer> customers = customerRepository.findAll();
+        if (!customers.iterator().hasNext()) {
+            addCustomers();
+            customers = customerRepository.findAll();
+        }
         model.addAttribute("customers", customers);
         model.addAttribute("username", principal.getName());
         return "customers";

@@ -32,7 +32,7 @@ class SecurityConfiguration {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .requestMatchers("/customers*")
-                    .authenticated()
+                    .hasAuthority("SCOPE_ADMIN")
                     .anyRequest()
                     .permitAll()
                 .and()
